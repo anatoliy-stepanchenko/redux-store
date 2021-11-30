@@ -19,8 +19,8 @@ export default class BookstoreServices extends Component {
   getBooks() {
         return new Promise((resolve, reject) => {
           setTimeout(() => {
-            // resolve(this.data)
-            reject(new Error('Something wrong'))
+            resolve(this.data)
+            // reject(new Error('Something wrong'))
           }, 800)
         })
     }
